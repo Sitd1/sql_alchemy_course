@@ -50,15 +50,15 @@ uv sync
 
 Создайте файл `.env` в корне проекта:
 
+```bash
+cp .env.example .env
+```
+
 ```env
 DB_USER=your_username
 DB_PASSWORD=your_password
 DB_NAME=sql_lessons
 DB_HOST=localhost
-```
-
-```bash
-cp .env.example .env
 ```
 
 ### 4. Запуск PostgreSQL через Docker
@@ -158,10 +158,8 @@ alembic current
 4. Отправьте в ветку (`git push origin feature/AmazingFeature`)
 5. Создайте Pull Request
 
-## 📄 Лицензия
-
-Этот проект распространяется под лицензией MIT. Подробности в файле LICENSE.
 
 ## 📞 Контакты
 
 Если у вас возникли вопросы или предложения, создайте issue в репозитории проекта.
+tg: @sitd1
