@@ -1,0 +1,13 @@
+import os
+
+from dotenv import load_dotenv
+
+# Загружаем переменные окружения
+load_dotenv()
+
+
+# Формируем URL подключения из переменных окружения
+DATABASE_URL = (
+    f"postgresql+psycopg2://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
+    f"@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+)
