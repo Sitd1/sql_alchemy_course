@@ -15,7 +15,7 @@ engine = create_engine("sqlite+pysqlite:///:memory:", echo=True)
 # print(mapper_registry)
 # print(mapper_registry.metadata)
 
-# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_4.lesson
+# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_04.lesson
 # <sqlalchemy.orm.decl_api.registry object at 0x104e917d0>
 # MetaData()
 
