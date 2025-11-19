@@ -39,7 +39,7 @@ metadata.drop_all(engine)
 
 
 #
-# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_3.lesson_3
+# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_03.lesson_03
 # 2025-11-12 16:46:58,096 INFO sqlalchemy.engine.Engine BEGIN (implicit)
 # 2025-11-12 16:46:58,096 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("user") FixMe <------ Эта штука проверяет наличие таблиц, если не пройдет будет Rollback
 # 2025-11-12 16:46:58,096 INFO sqlalchemy.engine.Engine [raw sql] ()

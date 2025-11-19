@@ -15,7 +15,7 @@ engine = create_engine('sqlite+pysqlite:///:memory:', echo=True)
 #     print(result)
 
 
-# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_2.lesson_1
+# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_02.lesson_1
 # 2025-11-12 15:03:55,407 INFO sqlalchemy.engine.Engine BEGIN (implicit) # FixMe <-- начало транзакции
 # 2025-11-12 15:03:55,407 INFO sqlalchemy.engine.Engine select 'hello world!'
 # 2025-11-12 15:03:55,407 INFO sqlalchemy.engine.Engine [generated in 0.00010s] ()
@@ -28,7 +28,7 @@ engine = create_engine('sqlite+pysqlite:///:memory:', echo=True)
 #     result = connection.execute(query)
 #     print(result.scalars().all()) # all
 
-# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_2.lesson_1
+# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_02.lesson_1
 # 2025-11-12 15:07:05,779 INFO sqlalchemy.engine.Engine BEGIN (implicit)
 # 2025-11-12 15:07:05,779 INFO sqlalchemy.engine.Engine select 'hello world!'
 # 2025-11-12 15:07:05,779 INFO sqlalchemy.engine.Engine [generated in 0.00010s] ()
@@ -52,7 +52,7 @@ with engine.connect() as connection:
 
 # В данном случае соединение закрыто:
 
-# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_2.lesson_1
+# (sql_alchemy_course_2) denis.sitdikov@MacBook-Pro-Denis-2 sql_alchemy_course_2 % uv run -m lesson_02.lesson_1
 # 2025-11-12 15:13:59,010 INFO sqlalchemy.engine.Engine BEGIN (implicit)
 # 2025-11-12 15:13:59,010 INFO sqlalchemy.engine.Engine select 'hello world!'
 # 2025-11-12 15:13:59,010 INFO sqlalchemy.engine.Engine [generated in 0.00009s] ()
@@ -61,7 +61,7 @@ with engine.connect() as connection:
 # Traceback (most recent call last):
 #   File "<frozen runpy>", line 198, in _run_module_as_main
 #   File "<frozen runpy>", line 88, in _run_code
-#   File "/Users/denis.sitdikov/PycharmProjects/sql_alchemy_course_2/lesson_2/lesson_10_01.py", line 50, in <module>
+#   File "/Users/denis.sitdikov/PycharmProjects/sql_alchemy_course_2/lesson_02/lesson_10_01.py", line 50, in <module>
 #     print(result.scalar_one_or_none())  # all
 #           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #   File "/Users/denis.sitdikov/PycharmProjects/sql_alchemy_course_2/.venv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1492, in scalar_one_or_none
