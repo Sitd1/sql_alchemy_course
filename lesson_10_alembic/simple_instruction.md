@@ -119,7 +119,7 @@ config.set_main_option(
 ### 1. Проверка истории миграций
 Полезные команды для работы:
 ```bash
-bashalembic current  # показать текущую версию миграции
+alembic current  # показать текущую версию миграции
 alembic history  # показать историю всех миграций
 alembic show <revision>  # показать детали конкретной миграции
 ```
