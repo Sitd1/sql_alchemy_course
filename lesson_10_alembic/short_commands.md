@@ -15,10 +15,10 @@
 
 3. Создаем версию миграции
 ```bash
-  alembic revision -m 'init' --autogenerate
+  uv run alembic revision -m 'init' --autogenerate
 ```
 
 4. Примененяем миграции к БД
 ```bash
-  alembic upgrade head
+  uv run alembic upgrade head
 ```
